@@ -2,6 +2,10 @@
 
 ガンダムマスタースーツ
 
+docker build -t bsq .: プロジェクトをdockerize
+
+docker run --rm -it -v ${PWD}:/usr/src/priv bsq: Dockerでプロジェクトを実行する
+
 make: プロジェクトをコンパイルする
 
 make init: プロジェクトを初期化する
